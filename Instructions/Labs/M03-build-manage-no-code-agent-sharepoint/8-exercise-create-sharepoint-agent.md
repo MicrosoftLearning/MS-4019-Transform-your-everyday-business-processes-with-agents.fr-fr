@@ -4,28 +4,33 @@
 
 ### Exercice
 
-Dans cet exercice, vous souhaitez créer un assistant SharePoint pour obtenir des réponses rapides ou effectuer des actions utiles liées à un site SharePoint spécifique que vous utilisez déjà. Par exemple, un site d’équipe, un site de projet ou un hub de ressources.
+Dans cet exercice, vous souhaitez créer un assistant SharePoint pour obtenir des réponses rapides ou effectuer des actions utiles liées à un site SharePoint spécifique que vous utilisez déjà. Vous pouvez effectuer cet exercice en utilisant l'une des options suivantes :
 
-1. Commencez par identifier un site SharePoint auquel vous avez déjà accès. Pour vous aider à en localiser un, rendez-vous sur la page d’accueil **Microsoft 365**, sélectionnez **Applications** dans le volet de navigation, puis choisissez **SharePoint**. Passez en revue les sites qui apparaissent dans le volet de navigation. Idéalement, le site que vous sélectionnez devrait contenir des documents, des listes ou des pages avec des informations projet, des ressources d’équipe ou d’autres sources de connaissance. Par exemple :
+- Si vous avez accès à un site SharePoint, tel qu'un site d'équipe, un site de projet ou un centre de ressources, vous pouvez utiliser ce site.
+- Si vous n'avez pas accès à un site SharePoint, vous pouvez tout de même suivre les étapes de cet exercice à l'aide d'un environnement de laboratoire simulé. La simulation utilise un site SharePoint fictif pour Fabrikam. 
+
+1. Pour vous aider à en localiser un, rendez-vous sur la page d’accueil **Microsoft 365**, sélectionnez **Applications** dans le volet de navigation, puis choisissez **SharePoint**. Passez en revue les sites qui apparaissent dans le volet de navigation. Idéalement, le site que vous sélectionnez devrait contenir des documents, des listes ou des pages avec des informations projet, des ressources d’équipe ou d’autres sources de connaissance. Par exemple :
    - Un site OneDrive personnel avec des documents partagés.
    - Un site SharePoint connecté à Teams
-   - Un projet partagé ou un site de service<br><br>
+   - Un projet partagé ou un site de service<br>
 
-    > [!NOTE]
-    > Si vous n’avez accès à aucun site utilisable, créez un site SharePoint basique pour ce labo ou associez-vous à un autre étudiant qui y a accès.
+    Sélectionnez le site SharePoint que vous souhaitez utiliser. 
 
-1. Sélectionnez le site SharePoint que vous souhaitez utiliser. 
+1. Si vous ne disposez pas d'un site SharePoint pour cet exercice, sélectionnez le lien suivant pour ouvrir l'environnement de laboratoire simulé dans votre navigateur : [Démarrer le labo de l’agent SharePoint simulé](https://cvsr8rrncj-imkzu8x04l.app.highlights.guide/sites/Mark8ProjectTeam).
+
+    Cette simulation ouvre le site d’équipe Mark 8 pour Fabrikam.
+   
 1. Quatre emplacements à partir desquels vous pouvez lancer le processus de création d’un assistant pour un site sont disponibles :
      - La page d’accueil du site SharePoint
      - La barre de commandes d’une bibliothèque de documents
      - Le menu contextuel des fichiers sélectionnés dans une bibliothèque de documents
      - Le volet de conversation de l’assistant
 
-    Pour ce labo, utilisons la page d’accueil du site SharePoint. Dans la page d’accueil du site, sélectionnez **+Nouveau,** puis, dans le menu déroulant qui s’affiche, sélectionnez **Assistant**.
+    Que vous utilisiez votre propre site SharePoint ou le site simulé, utilisons la page d’accueil du site. Dans la page d’accueil du site, sélectionnez **+Nouveau,** puis, dans le menu déroulant qui s’affiche, sélectionnez **Assistant**.
 
 1. Dans la fenêtre **Créer votre nouvel assistant**, l’outil assistant Copilot dans SharePoint crée une version brouillon de votre assistant pour le site sélectionné. Notez qu'au centre de la fenêtre, la source de cet assistant (votre site sélectionné) est indiquée. Vous devez à présent configurer l’assistant : cliquez sur le bouton **Modifier**. Cette opération ouvre le formulaire **Modifier l’assistant**. 
-1. Ce formulaire **Modifier l’assistant** comporte trois onglets : **Vue d’ensemble**, **Sources** et **Comportement**. L’onglet **Vue d’ensemble** est ouvert par défaut. Dans cet onglet, vous devez entrer le nom et l’objectif de l’assistant. Des valeurs par défaut sont proposées pour chaque champ, mais vous pouvez les modifier dès maintenant si vous le souhaitez. 
-1. L’onglet **Vue d’ensemble** affiche également l’icône par défaut associée à l’assistant. Vous pouvez sélectionner l’option **Modifier** qui apparaît sous l’icône si vous souhaitez la personnaliser. Une icône d’assistant doit être un fichier .png dont la taille ne dépasse pas 1 Mo. Si vous n’avez pas d’icône à utiliser, passez à l’étape suivante.
+1. Le formulaire **Créer votre nouvel assistant** comporte trois onglets : **Vue d’ensemble**, **Sources** et **Comportement**. L’onglet **Vue d’ensemble** est ouvert par défaut. Dans cet onglet, vous devez entrer le nom et l’objectif de l’assistant. Des valeurs par défaut sont proposées pour chaque champ, mais vous pouvez les modifier dès maintenant si vous le souhaitez. 
+1. L’onglet **Vue d’ensemble** affiche également l’icône par défaut associée à l’assistant. Si vous utilisez le labo simulé, vous ne pouvez pas modifier l’icône de l’agent. Toutefois, si vous utilisez votre propre site personnel, vous pouvez sélectionner l’option **Modifier** qui apparaît sous l’icône si vous souhaitez la personnaliser. Une icône d’assistant doit être un fichier .png dont la taille ne dépasse pas 1 Mo. Si vous n’avez pas d’icône à utiliser, passez à l’étape suivante.
 1. À ce stade, notez que le bouton **Enregistrer et fermer** est activé. Vous pouvez le sélectionner à ce stade, mais ne le faites pas encore. Si vous l’avez fait, l’outil accepterait les sources de connaissances et les attributs comportementaux par défaut pour votre assistant. Cette opération rendrait également l’assistant actif au lieu de le conserver en mode brouillon. Bien que vous puissiez toujours apporter des modifications ultérieurement, pour les besoins de ce labo, continuons à travailler en mode brouillon pour configurer les attributs d’assistant restants. Pour ce faire, sélectionnez l’onglet **Sources**.
 1. L’onglet **Sources** vous permet de définir d’autres sources dans la version brouillon de votre assistant. La source par défaut pour un assistant SharePoint est l'intégralité du site SharePoint. Cette option est visible dans le champ source, où la valeur par défaut est **Provenance : site entier**. Cette option utilise toutes les sources de données de ce site. Cependant, si vous souhaitez définir vos sources de manière plus précise, sélectionnez ce champ puis, dans le menu déroulant qui s’affiche, choisissez l’option **Provenant de bibliothèques de document, dossiers ou fichiers**. Vous décidez de l’option source qui vous convient. Si vous choisissez l’option **Provenant de bibliothèques de document, dossiers ou fichiers**, procédez comme suit :
    1. Une fois l’option **Provenant de bibliothèques de document, dossiers ou fichiers** activée, une nouvelle possibilité apparaît : **+Ajouter des bibliothèques de documents, dossiers ou fichiers**. Sélectionnez cette option de menu pour ouvrir la fenêtre **Sélectionner des éléments**.
@@ -39,4 +44,4 @@ Dans cet exercice, vous souhaitez créer un assistant SharePoint pour obtenir de
 1. Une fois que vous avez terminé d’apporter vos modifications finales à l’assistant SharePoint, sélectionnez le bouton **Enregistrer et fermer** pour enregistrer vos modifications. Comme vous étiez toujours en mode brouillon, l’enregistrement de la version brouillon de l’assistant la convertit en assistant SharePoint actif.
 1. Sélectionnez le bouton **X** dans le coin supérieur de la fenêtre **Créer votre nouvel assistant** pour la fermer. Cette action vous renvoie à la page d’accueil du site SharePoint et l’assistant apparaît sur le côté droit de la fenêtre. 
 1. Prenez le temps de le tester. Vous pouvez utiliser n’importe quelle invite de démarrage ou entrer des invites personnalisées.
-1. Si vous souhaitez apporter des modifications à l’assistant, sélectionnez l’icône représentant des points de suspension dans le coin supérieur du volet de l’assistant. Dans le menu déroulant qui apparaît, choisissez **Modifier l’assistant**. Cette action ouvre la fenêtre **Modifier l’assistant**, qui est essentiellement un réplica de la fenêtre **Créer votre nouvel assistant**. Parcourez les onglets pour mettre à jour les propriétés que vous souhaitez modifier, puis enregistrez vos modifications. 
+1. Si vous utilisez la simulation, vous avez terminé cet exercice. La simulation n’est pas programmée pour modifier l’agent. Toutefois, si vous utilisez votre propre site SharePoint personnel, vous pouvez effectuer cette dernière étape si vous souhaitez apporter des modifications à l’agent. Pour ce faire, sélectionnez l’icône de sélection dans le coin supérieur du volet agent. Dans le menu déroulant qui apparaît, choisissez **Modifier l’assistant**. Cette action ouvre la fenêtre **Modifier l’assistant**, qui est essentiellement un réplica de la fenêtre **Créer votre nouvel assistant**. Parcourez les onglets pour mettre à jour les propriétés que vous souhaitez modifier, puis enregistrez vos modifications. 
